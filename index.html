@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="hide-button">
+        <button onclick="hideNote()" class="hide">Verstecke Noten</button>
+    </div>
+    <section>
+        <div class="piano-container">
+            <div class="piano-notes-full">
+                <button onclick="playSound(8)" class="note piano-c">
+                    <p>C</p>
+                </button>
+                <button onclick="playSound(10)" class="note piano-d"><p>D</p></button>
+                <button onclick="playSound(12)" class="note piano-e"><p>E</p></button>
+                <button onclick="playSound(13)" class="note piano-f"><p>F</p></button>
+                <button onclick="playSound(15)" class="note piano-g"><p>G</p></button>
+                <button onclick="playSound(17)" class="note piano-a"><p>A</p></button>
+                <button onclick="playSound(19)" class="note piano-b"><p>B</p></button>
+            </div>
+
+            <div class="piano-notes-sharp">
+                <button onclick="playSharp(8)" class="notes piano-c"><p>C#</p></button>
+                <button onclick="playSharp(10)" class="notes piano-d"><p>D#</p></button>
+                <button onclick="playSharp(13)" class="notes piano-f"><p>F#</p></button>
+                <button onclick="playSharp(15)" class="notes piano-g"><p>G#</p></button>
+                <button onclick="playSharp(17)" class="notes piano-a"><p>A#</p></button>
+                
+            </div>
+        </div>
+    </section>
+
+    <div class="show-songs">
+        <button class="show-song-button" onclick="showSongs()">Show Songs</button>
+        <div class="song-container">
+            <input id="searchInput" type="text" placeholder="suche Song">
+            
+            <p>Bite Me</p>
+            <p>Happy Birthday</p>
+            <p>Let her go</p>
+            <p>Jingle Bells</p>
+            
+        </div>
+    </div>
+
+    <div class="song-notes-container">
+        <ul class="note-list">
+
+
+
+        </ul>
+    </div>
+
+        
+
+    <div class="song-title"><p></p></div>
+    <script src="index.js"></script>
+</body>
+</html>

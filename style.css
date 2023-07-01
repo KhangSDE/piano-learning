@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    font-family: 'Prompt', sans-serif;
+    user-select: none;
+}
+
+section .piano-notes-full {
+    background-color: rgba(0, 255, 255, 0);
+    width: 40rem;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 15rem;
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+}
+section .piano-container .note {
+    background-color: white;
+    border: 2px solid black;
+    width: 5rem;
+    height: 15rem;
+    font-family: 'Prompt', sans-serif;
+    text-align: center;
+    transition: 0.2s;
+    z-index: 1;
+
+}
+section .piano-container .note:active {
+    background-color: rgb(197, 197, 197);
+}
+section .piano-container .note p {
+    position: relative;
+    top: 120px;
+}
+section .piano-container .note p.hide {
+    visibility: hidden;
+}
+
+section .piano-container .notes {
+    background-color: black;
+    color: white;
+    font-family: 'Prompt', sans-serif;
+    border: none;
+    width: 4rem;
+    height: 10rem;
+    border-radius: 15px;
+    transition: 0.4s;
+    
+}
+
+section .piano-container .notes p.hide {
+    visibility: hidden;
+}
+section .piano-container .notes:active {
+    background-color: rgb(59, 59, 59);
+}
+
+section .piano-notes-sharp {
+    
+    width: 35rem;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 15rem;
+    gap: 50px;
+    z-index: 2;
+} 
+section .piano-container .notes.piano-f {
+    transform: translateX(40%);
+    
+}
+section .piano-container .notes.piano-g {
+    transform: translateX(40%);
+    
+}
+section .piano-container .notes.piano-a {
+    transform: translateX(30%);
+    
+}
+.song-container {
+    width: 40rem;
+    /* background-color: rgb(255, 153, 174); */
+    border: 2px solid black;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 4rem;
+    border-radius: 30px;
+    color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 13rem;
+    visibility: hidden;
+    
+}
+
+.song-container input {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 20rem;
+    height: 1.5rem;
+    border: 2px solid black;
+    border-radius: 15px;
+    top: 10px;
+}
+.song-container p {
+    background-color: rgba(220, 20, 60, 0);
+    border: 2px solid black;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    margin: auto;
+    transition: 0.4s;
+      
+}
+
+.song-container p:hover{
+    transform: translateY(-10px);
+} 
+.song-container.hidden {
+    visibility: visible;
+}
+
+.song-title {
+    font-size: 3rem;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    background-color: rgba(132, 0, 255, 0);
+    width: 30rem;
+    top: -1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    visibility: hidden;
+}
+.song-title.active {
+    visibility: visible;
+}
+.hide {
+    background-color: white;
+    border: 2px solid;
+    width: 10rem;
+    height: 1.9rem;
+    border-radius: 10px;
+    font-family: 'Prompt', sans-serif;
+    position: relative;
+    top: 20px;
+}
+.show-song-button {
+    background-color: white;
+    border: 2px solid;
+    width: 10rem;
+    height: 1.9rem;
+    border-radius: 10px;
+    font-family: 'Prompt', sans-serif;
+    position: relative;
+    top: 25px;
+}
+
+.song-notes-container .note-list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8rem;
+    background-color: rgba(0, 255, 255, 0);
+    width: 30rem;
+    height: 5rem;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+.song-notes-container .note-list li{
+    background-color: rgb(255, 255, 255);
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.note-list.hide {
+    visibility: hidden;
+}
+
+
+
