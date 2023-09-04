@@ -3,6 +3,27 @@ body {
     font-family: 'Prompt', sans-serif;
     user-select: none;
 }
+section {
+    background-color: rgba(0, 255, 255, 0);
+    width: 45vw;
+    height: 20vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 10vw;
+    
+}
+@media (max-width: 390px) {
+    section {
+        rotate: -90deg;
+        top: 190vw;
+        right: 130vw;
+    }
+}
 
 section .piano-notes-full {
     background-color: rgba(0, 255, 255, 0);
@@ -11,7 +32,7 @@ section .piano-notes-full {
     margin: auto;
     left: 0;
     right: 0;
-    top: 15rem;
+    /* top: 15rem; */
     display: flex;
     justify-content: center;
     gap: 1px;
@@ -66,7 +87,7 @@ section .piano-notes-sharp {
     margin: auto;
     left: 0;
     right: 0;
-    top: 15rem;
+    /* top: 15rem; */
     gap: 50px;
     z-index: 2;
 } 
@@ -171,6 +192,7 @@ section .piano-container .notes.piano-a {
     top: 25px;
 }
 
+
 .song-notes-container .note-list {
     list-style-type: none;
     display: grid;
@@ -201,6 +223,15 @@ section .piano-container .notes.piano-a {
 
 .note-list.hide {
     visibility: hidden;
+}
+
+@media (max-width: 390px) {
+    .show-songs {
+        display: none;
+    }
+    .hide-button {
+        display: none;
+    }
 }
 
 
