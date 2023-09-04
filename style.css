@@ -248,6 +248,14 @@ section .piano-container .notes.piano-a {
     song-notes-container {
         display: none;
     }
+
+    h1 {
+        display: block;
+
+    }
+    img {
+        display: block;
+    }
 }
 @media (min-width: 400px) {
     h1, img {
