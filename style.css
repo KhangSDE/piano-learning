@@ -3,6 +3,7 @@ body {
     font-family: 'Prompt', sans-serif;
     user-select: none;
 }
+
 section {
     background-color: rgba(0, 255, 255, 0);
     width: 45vw;
@@ -230,6 +231,26 @@ section .piano-container .notes.piano-a {
         display: none;
     }
     .hide-button {
+        display: none;
+    }
+}
+
+@media (max-width: 390px) {
+    section {
+        display: none;
+    }
+    hide-button {
+        display: none;
+    }
+    show-songs {
+        display: none;
+    }
+    song-notes-container {
+        display: none;
+    }
+}
+@media (min-width: 400px) {
+    h1, img {
         display: none;
     }
 }
